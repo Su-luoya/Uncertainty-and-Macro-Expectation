@@ -9,6 +9,7 @@ from datetime import datetime
 # from itertools import combinations, combinations_with_replacement, permutations, product
 from typing import (
     Any,
+    Callable,
     Generic,
     Iterable,
     Literal,

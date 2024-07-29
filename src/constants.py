@@ -8,6 +8,8 @@ SEED: int = 0
 random.seed(a=SEED)
 np.random.seed(seed=SEED)
 
+WINDOW_SIZE: int = 80
+
 VARIABLE: dict[str, dict[str, str]] = {
     "Real GDP": {
         "abbreviation": "RGDP",
@@ -59,11 +61,11 @@ VARIABLE: dict[str, dict[str, str]] = {
         "frequency": "M",
         "type": "level",
     },
-    "CPI": {
-        "abbreviation": "CPI",
-        "frequency": "QM",
-        "type": "???",
-    },
+    # "CPI": {
+    #     "abbreviation": "CPI",
+    #     "frequency": "QM",
+    #     "type": "???",
+    # },
     "Unemployment Rate": {
         "abbreviation": "Unemployment",
         "frequency": "QM",

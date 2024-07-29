@@ -3,15 +3,14 @@ class ProjectPath:
     data: str = "data"
     raw: str = f"{data}/raw"
     derived: str = f"{data}/derived"
-    individual_reg: str = f"{derived}/disagreement/individual"
-    consensus_reg: str = f"{derived}/disagreement/consensus"
-    idio_reg: str = f"{derived}/disagreement/idiosyncratic"
+    individual_reg: str = f"{derived}/individual"
+    consensus_reg: str = f"{derived}/consensus"
     beta_reg: str = f"{derived}/beta"
 
-    survey: str = f"{raw}/Survey Data"
-    individual: str = f"{survey}/Individual"
-    consensus: str = f"{survey}/Consensus"
-    real: str = f"{raw}/Real-Time Data"
+    survey: str = f"{raw}/Survey"
+    # individual: str = f"{survey}/Individual"
+    # consensus: str = f"{survey}/Consensus"
+    real: str = f"{raw}/Real"
     uncertainty: str = f"{raw}/Uncertainty"
 
     # & Cache
